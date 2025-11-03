@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated skills</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-boxni;
+
+        }
+
+        .wrapper {
+
+            background-color:black;
+            width: 700px;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 2px 2px 10px purple;
+            border-color:black;
+           
+        }
+
+        body {
+
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .progressbar{
+            margin-bottom: 20px;
+        }
+
+        .wrapper h1 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .bar {
+            border: 2px solid blue;
+            height: 20px;
+            overflow: hidden;
+            border-radius: 20px;
+             margin-bottom: 20px;
+        }
+
+        .progress {
+
+            background-color: blue;
+            background-image: linear-gradient(to right, pink,orange);
+            height: 20px;
+
+        }
+        .row label{
+            font-size: 18Px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>MY SKILLS</h1>
+        <div class="progressbar " >
+            <div class="row" >
+                <label>HTML</label>
+
+                
+            </div>
+            <div class="bar">
+                <div class="progress " style="width: 95%;">
+
+                </div>
+
+            </div>
+                <div class="row">
+                <label>css</label>
+
+                
+            </div>
+            <div class="bar">
+                <div class="progress" style="width: 55%;">
+
+                </div>
+
+            </div>
+                <div class="row">
+                <label>python</label>
+
+               
+            </div>
+            <div class="bar">
+                <div class="progress" style="width: 65%;">
+
+                </div>
+
+            </div>
+                <div class="row">
+                <label>javascript</label>
+
+
+            </div>
+            <div class="bar">
+                <div class="progress" style="width: 75%;">
+
+                </div>
+
+            </div>
+                <div class="row">
+                <label>java</label>
+
+             
+            </div>
+            <div class="bar">
+                <div class="progress" style="width: 85%;">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
