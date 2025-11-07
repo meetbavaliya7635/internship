@@ -1,60 +1,74 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
 
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #080a21;
-}
-.title{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    letter-spacing: 10px;
+    background-color: rgb(0, 255, 179);
     color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.row{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.col{
-    background-color: #2097f3;
-    width: 150px;
-    color: aliceblue;
-    text-align: center;
+
+
+.container {
+    background-color: rgb(63, 63, 63);
+    padding: 50px;
+    width: 800px;
+    height: 430px;
     border-radius: 10px;
-    overflow: hidden;
 }
-.col h1{
-    font-size: 70px;
+
+
+.con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.col p{
-    font-size: 20px;
-    background-color: rgb(255, 255, 255,o.4);
+
+h1{
+    border-left: 6px solid rgb(0, 255, 179);
+    color: rgb(0, 255, 179);
+    padding-left: 20px;
+    font-weight: 900;
 }
-.k{
-    background-color: #fd006b;
+
+
+
+
+.con input {
+    outline: none;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
 }
-.col p{
-    opacity: 0.8;
+
+.con input::placeholder {
+    font-weight: 900;
     color: aliceblue;
-    font-weight: 600px;
 }
-.pm{
-    width: 30px;
-    height: 20px;
+
+.container p{
     text-align: center;
-    background-color: aliceblue;
     margin-top: 80px;
-    border-radius: 5px;
-    margin-left: -17px;
-    
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.con button{
+    color: rgb(0, 255, 179);
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    padding: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
