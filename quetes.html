@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+
+            background-color: rgb(23, 5, 15);
+            display: flex;
+        }
+
+        .car {
+            height: 300px;
+            width: 400px;
+            background-color: rgb(145, 135, 135);
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-top: 200px;
+
+        }
+
+        h2 {
+
+            color: rgb(47, 9, 83);
+        }
+
+        p {
+            font-size: 27px;
+            font-weight: 400;
+        }
+
+        .kk {
+
+            margin-top: 40px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: rgb(77, 8, 70);
+            border-radius: 13px;
+        }
+
+        .kkk {
+
+            padding: 15px;
+            margin-right: 15px;
+            border-radius: 6px;
+            background-color: aquamarine;
+            border-color: rgba(160, 180, 201, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="car">
+        <h2>Quote generator</h2><br>
+        <br>
+        <p id="quete">" in the middle od difficultylies<br>
+            oppertunity.-albert einstein"</p>
+        <button id="copy" class="kkk" onclick="copy()"> copyy
+            <i class="fa-regular fa-copy"></i></button>
+
+        <button class="kk" onclick="abc()">
+            GENERATOR<i class="fa-solid fa-gears"></i>
+        </button>
+
+    </div>
+    <script>
+        const q = document.getElementById("quete");
+
+
+        async function abc() {
+            const response = await fetch("https://dummyjson.com/quotes/random");
+
+
+            const data = await response.json();
+            console.log(data);
+
+
+            q.textContent = data.quote;
+        }
+        function copy(){
+
+            navigator.clipboard.writeText(q.textContent);
+    alert("text copibord")
+        }
+
+
+        abc();
+    </script>
+</body>
+
+</html>
